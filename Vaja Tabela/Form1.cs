@@ -25,6 +25,7 @@ namespace Vaja_Tabela
         {
             tabelca.dodaj(Convert.ToInt32(textBox1.Text));
             label1.Text = tabelca.ToString();
+            textBox1.Clear();
         }
 
         private void vsebujeButton_Click(object sender, EventArgs e)
@@ -59,6 +60,36 @@ namespace Vaja_Tabela
         private void povprecjeButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Povprečje vseh stevil je: " + tabelca.povprecje() + " ejga Joža!");
+        }
+
+        private void binaryButton_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                int y = tabelca.binarno(Convert.ToInt32(textBox1.Text));
+                
+                if (y == -2)
+                {
+                    MessageBox.Show("Tabela ni urejena.");
+                }
+                else if (y == -1)
+                {
+                    MessageBox.Show("Element ni v tabeli");
+
+                }
+                else
+                {
+                    MessageBox.Show("Binarno: " + y);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Prišlo je do napake ejga Joža!");
+
+            }
+
+   
         }
     }
 
@@ -147,6 +178,52 @@ namespace Vaja_Tabela
         {
             
             return Convert.ToDouble(vsota()) / Convert.ToDouble(dolzina);
+        }
+
+        public bool urejeno()
+        {
+            int item = tabela[0];
+            for(int i = 1; i < dolzina; i++)
+            {
+                if(item > tabela[i])
+                {
+                    return false;
+                } else
+                {
+                    item = tabela[i];
+                }
+                Console.WriteLine(item);
+            }
+
+            return true;
+
+        }
+
+        public int binarno(int y)
+        {
+            if(!urejeno())
+            {
+                return -2;
+            }
+            int start = 0;
+            int mid = 0;
+            int last = dolzina-1;
+
+            while (start <= last) {
+                Console.WriteLine(mid + "neki");
+                mid = (start + last) / 2;
+                if (tabela[mid] < y)
+                {
+                    start = mid +1;
+                }
+                else if (tabela[mid] > y) {
+                    last = mid -1;
+                }
+                else{
+                    return mid;
+                }
+            }
+            return -1;
         }
 
 

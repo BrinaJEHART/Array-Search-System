@@ -7,3 +7,12 @@ C:\Users\Administrator\source\repos\Vaja Tabela\Vaja Tabela\obj\Debug\Vaja_Tabel
 C:\Users\Administrator\source\repos\Vaja Tabela\Vaja Tabela\obj\Debug\Vaja Tabela.csproj.GenerateResource.cache
 C:\Users\Administrator\source\repos\Vaja Tabela\Vaja Tabela\obj\Debug\Vaja Tabela.exe
 C:\Users\Administrator\source\repos\Vaja Tabela\Vaja Tabela\obj\Debug\Vaja Tabela.pdb
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\bin\Debug\Vaja Tabela.exe.config
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\bin\Debug\Vaja Tabela.exe
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\bin\Debug\Vaja Tabela.pdb
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\obj\Debug\Vaja Tabela.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\obj\Debug\Vaja_Tabela.Form1.resources
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\obj\Debug\Vaja_Tabela.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\obj\Debug\Vaja Tabela.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\obj\Debug\Vaja Tabela.exe
+C:\Users\Administrator\Desktop\Array-Search-System-master\Array-Search-System-master\Vaja Tabela\obj\Debug\Vaja Tabela.pdb

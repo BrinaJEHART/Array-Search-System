@@ -38,7 +38,7 @@
             this.button10 = new System.Windows.Forms.Button();
             this.minButton = new System.Windows.Forms.Button();
             this.vsebujeButton = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.binaryButton = new System.Windows.Forms.Button();
             this.povprecjeButton = new System.Windows.Forms.Button();
             this.vsotaButton = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -77,7 +77,7 @@
             this.groupBox2.Controls.Add(this.button10);
             this.groupBox2.Controls.Add(this.minButton);
             this.groupBox2.Controls.Add(this.vsebujeButton);
-            this.groupBox2.Controls.Add(this.button7);
+            this.groupBox2.Controls.Add(this.binaryButton);
             this.groupBox2.Controls.Add(this.povprecjeButton);
             this.groupBox2.Controls.Add(this.vsotaButton);
             this.groupBox2.Controls.Add(this.button8);
@@ -155,14 +155,15 @@
             this.vsebujeButton.UseVisualStyleBackColor = true;
             this.vsebujeButton.Click += new System.EventHandler(this.vsebujeButton_Click);
             // 
-            // button7
+            // binaryButton
             // 
-            this.button7.Location = new System.Drawing.Point(18, 106);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 38);
-            this.button7.TabIndex = 18;
-            this.button7.Text = "Vsebuje binarno";
-            this.button7.UseVisualStyleBackColor = true;
+            this.binaryButton.Location = new System.Drawing.Point(18, 106);
+            this.binaryButton.Name = "binaryButton";
+            this.binaryButton.Size = new System.Drawing.Size(75, 38);
+            this.binaryButton.TabIndex = 18;
+            this.binaryButton.Text = "Vsebuje binarno";
+            this.binaryButton.UseVisualStyleBackColor = true;
+            this.binaryButton.Click += new System.EventHandler(this.binaryButton_Click);
             // 
             // povprecjeButton
             // 
@@ -242,7 +243,7 @@
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button minButton;
         private System.Windows.Forms.Button vsebujeButton;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button binaryButton;
         private System.Windows.Forms.Button povprecjeButton;
         private System.Windows.Forms.Button vsotaButton;
         private System.Windows.Forms.Button button8;
