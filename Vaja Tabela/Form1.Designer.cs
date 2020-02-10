@@ -105,6 +105,7 @@
             this.button9.TabIndex = 20;
             this.button9.Text = "Uredi z vstavljanjem";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // dodajButton
             // 
@@ -134,6 +135,7 @@
             this.button10.TabIndex = 19;
             this.button10.Text = "Uredi z mehurcki";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // minButton
             // 
@@ -193,6 +195,7 @@
             this.button8.TabIndex = 17;
             this.button8.Text = "Uredi z izbiranjem";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // groupBox1
             // 

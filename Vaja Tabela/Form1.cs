@@ -91,6 +91,25 @@ namespace Vaja_Tabela
 
    
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            tabelca.navadno_urejanje();
+            label1.Text = tabelca.ToString();
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            tabelca.urejanje_z_mehurcki();
+            label1.Text = tabelca.ToString();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            tabelca.urejanje_z_vstavljanjem(Convert.ToInt32(textBox1.Text));
+            label1.Text = tabelca.ToString();
+        }
     }
 
     public class Tab
@@ -226,6 +245,71 @@ namespace Vaja_Tabela
             return -1;
         }
 
+        public void navadno_urejanje() {
+            int [] tab = tabela;
+            int prvi; 
+            int min; 
+            int i, tmp;
+
+            for (prvi = 0; prvi < dolzina; prvi++)
+            {
+ 
+                min = prvi;
+                for (i = prvi + 1; i < dolzina; i++)
+                    if (tab[i] < tab[min])
+                        min = i;
+
+      
+                tmp = tab[min];
+                tab[min] = tab[prvi];
+                tab[prvi] = tmp;
+            }
+
+            tabela = tab;
+
+        }
+
+        public void urejanje_z_mehurcki() { // ejga lejga
+            int [] tab = tabela;
+            bool zamenjava; 
+            int i, tmp;
+
+            do 
+            {
+                zamenjava = false;
+
+                for (i = 0; i < (dolzina - 1); i++) 
+                {
+                    if (tab[i] > tab[i + 1]) 
+                    {
+                        
+                        tmp = tab[i];
+                        tab[i] = tab[i + 1];
+                        tab[i + 1] = tmp;
+                        zamenjava = true; 
+                    }
+                }
+            } 
+            while (zamenjava);
+
+            tabela = tab;
+        }
+
+        public void urejanje_z_vstavljanjem(int x) {
+            int[] tab = tabela;
+            int j = dolzina;
+
+            while ((j > 0) && (tab[j - 1] > x))
+            {
+                tab[j] = tab[j - 1]; 
+                j--; 
+            }
+            tab[j] = x;
+
+            tabela = tab;
+            dolzina++;
+
+        }
 
     }
 }
